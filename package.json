@@ -1,0 +1,31 @@
+{
+  "name": "chatgpt",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A simple Gemini-powered content writer built with Electron.",
+  "devDependencies": {
+    "electron": "^38.3.0",
+    "electron-builder": "^24.6.0"
+  },
+  "dependencies": {
+    "axios": "^1.12.2"
+  },
+  "build": {
+    "appId": "appId",
+    "productName": "AI Assistant",
+    "win": {
+      "target": "nsis",
+      "icon": "./icon/icon.ico"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
